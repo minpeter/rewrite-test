@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return {
+      fallback: [
+        {
+          source: "/:path*",
+          destination: `https://friendli.ai/:path*`,
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;
