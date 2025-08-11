@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       fallback: [
         {
           source: "/:path*",
-          destination: `https://friendli.ai/:path*`,
+          destination: `https://promotion.friendli.ai//:path*`,
         },
       ],
     };
